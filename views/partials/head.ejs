@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %></title>
+  <meta name="description" content="<%= desc %>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/#top" class="logo"><span><%= p.initials %></span><%= p.name %></a>
+      <button class="menu-btn" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <nav id="menu">
+        <a href="/#about">Giới thiệu</a>
+        <a href="/#services">Dịch vụ</a>
+        <a href="/#projects">Dự án</a>
+        <a href="/#experience">Kinh nghiệm</a>
+        <a href="/#contact" class="btn btn-sm">Liên hệ</a>
+      </nav>
+    </div>
+  </header>

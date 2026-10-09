@@ -1,0 +1,285 @@
+{
+  "name": "Danh Nguyễn",
+  "initials": "DN",
+  "title": "Business Analyst",
+  "subtitle": "Data Analytics · Process Design · Automation",
+  "tagline": "Mình biến dữ liệu rời rạc và quy trình thủ công thành insight rõ ràng và hệ thống tự động — giúp doanh nghiệp ra quyết định nhanh hơn, tốn ít công sức hơn.",
+  "availability": "Đang nhận dự án freelance & cơ hội việc làm",
+  "about": [
+    "Mình là Business Analyst chuyên về phân tích dữ liệu, thiết kế lại quy trình và tự động hóa. Mình làm cầu nối giữa nghiệp vụ và kỹ thuật: lắng nghe vấn đề thật của đội vận hành, đo lường bằng dữ liệu, rồi thiết kế giải pháp đủ đơn giản để người dùng thực sự dùng.",
+    "Cách làm việc của mình: xác định vấn đề và chỉ số thành công trước, vẽ quy trình hiện tại (AS-IS) để tìm điểm nghẽn, đề xuất quy trình mới (TO-BE), sau đó mới chọn công cụ — dashboard hay tự động hóa — để hiện thực hóa và đo lại kết quả."
+  ],
+  "stats": [
+    { "value": "3+", "label": "Năm kinh nghiệm phân tích" },
+    { "value": "15+", "label": "Quy trình đã tối ưu" },
+    { "value": "~120h", "label": "Giờ thủ công tiết kiệm mỗi tháng" }
+  ],
+  "skills": [
+    { "group": "Phân tích dữ liệu", "items": ["SQL", "Python (pandas)", "Excel nâng cao", "Thống kê & A/B test", "Dự báo chuỗi thời gian"] },
+    { "group": "Trực quan hóa & BI", "items": ["Power BI", "Tableau", "Looker Studio", "DAX", "Data storytelling"] },
+    { "group": "Quy trình & Nghiệp vụ", "items": ["BPMN 2.0", "AS-IS / TO-BE", "BRD / User story", "Gap analysis", "Stakeholder management"] },
+    { "group": "Tự động hóa", "items": ["Power Automate", "UiPath (RPA)", "n8n", "Python scripting", "Excel VBA"] }
+  ],
+  "services": [
+    { "title": "Phân tích dữ liệu & Dashboard", "desc": "Làm sạch dữ liệu, xây dựng mô hình số liệu và dashboard Power BI/Tableau để lãnh đạo nhìn thấy đúng chỉ số cần theo dõi." },
+    { "title": "Khảo sát & thiết kế quy trình", "desc": "Vẽ quy trình hiện tại, tìm điểm nghẽn, đề xuất quy trình mới kèm tài liệu BRD, user story và tiêu chí nghiệm thu." },
+    { "title": "Tự động hóa quy trình", "desc": "Tự động hóa các tác vụ lặp lại (báo cáo, đối soát, phê duyệt, nhắc việc) bằng Power Automate, RPA và Python." }
+  ],
+  "process": [
+    { "step": "Khám phá", "desc": "Phỏng vấn các bên liên quan, xác định vấn đề và chỉ số thành công." },
+    { "step": "Đo lường", "desc": "Thu thập dữ liệu, vẽ quy trình AS-IS, tìm điểm nghẽn." },
+    { "step": "Thiết kế", "desc": "Đề xuất TO-BE, chọn giải pháp, thống nhất phạm vi." },
+    { "step": "Triển khai", "desc": "Xây dashboard / tự động hóa, kiểm thử cùng người dùng." },
+    { "step": "Đo lại", "desc": "So sánh trước–sau, bàn giao tài liệu, đào tạo." }
+  ],
+  "experience": [
+    {
+      "role": "Business Analyst",
+      "company": "Công ty ABC (thay bằng công ty hiện tại)",
+      "period": "2024 – Hiện tại",
+      "points": [
+        "Thu thập yêu cầu và thiết kế lại các quy trình vận hành – tài chính, rút ngắn chu kỳ xử lý trung bình hơn 50%.",
+        "Xây dựng bộ dashboard Power BI dùng hằng ngày cho ban giám đốc và 4 phòng ban.",
+        "Triển khai các luồng tự động hóa bằng Power Automate và Python, tiết kiệm khoảng 120 giờ thủ công mỗi tháng."
+      ]
+    },
+    {
+      "role": "Data Analyst",
+      "company": "Công ty XYZ (thay bằng công ty trước đó)",
+      "period": "2022 – 2024",
+      "points": [
+        "Viết truy vấn SQL, làm sạch dữ liệu và lập báo cáo kinh doanh định kỳ.",
+        "Phân tích hành vi khách hàng, đề xuất các chiến dịch được đo lường bằng A/B test."
+      ]
+    },
+    {
+      "role": "Cử nhân Hệ thống thông tin quản lý / Business Analytics",
+      "company": "Tên trường đại học của bạn",
+      "period": "2018 – 2022",
+      "points": [
+        "Chuyên ngành phân tích kinh doanh; thực hiện nhiều đồ án về dự báo, phân khúc khách hàng và mô hình dự đoán."
+      ]
+    }
+  ],
+  "categories": [
+    { "id": "all", "label": "Tất cả" },
+    { "id": "work", "label": "Công việc" },
+    { "id": "freelance", "label": "Freelance" },
+    { "id": "school", "label": "Đồ án trường" }
+  ],
+  "projects": [
+    {
+      "slug": "dashboard-doanh-thu-ton-kho",
+      "title": "Dashboard doanh thu & tồn kho thời gian thực",
+      "category": "work",
+      "year": "2025",
+      "role": "Business Analyst (phụ trách chính)",
+      "duration": "8 tuần",
+      "team": "1 BA, 1 Data Engineer, 3 người dùng chủ chốt",
+      "summary": "Thay báo cáo Excel thủ công bằng dashboard Power BI cập nhật tự động, giúp ban giám đốc theo dõi doanh thu và tồn kho mỗi ngày.",
+      "tags": ["Power BI", "SQL", "DAX"],
+      "tools": ["Power BI", "SQL Server", "DAX", "Excel"],
+      "context": "Công ty bán lẻ với hơn 40 cửa hàng. Mỗi tuần, 2 nhân viên mất khoảng 2 ngày để gom số liệu từ nhiều file Excel và hệ thống POS để làm báo cáo cho ban giám đốc.",
+      "problem": "Số liệu đến muộn, mỗi phòng ban có một cách tính doanh thu khác nhau nên các cuộc họp mất nhiều thời gian tranh luận về con số thay vì quyết định. Hàng tồn kho chậm luân chuyển không được phát hiện kịp thời.",
+      "approach": [
+        { "title": "Thống nhất định nghĩa chỉ số", "desc": "Tổ chức 3 workshop với tài chính, kinh doanh, kho để chốt định nghĩa doanh thu thuần, tỷ lệ tồn kho, vòng quay hàng." },
+        { "title": "Xây mô hình dữ liệu", "desc": "Thiết kế star schema từ dữ liệu POS và kho, viết truy vấn SQL làm sạch và kiểm tra đối chiếu với số liệu kế toán." },
+        { "title": "Thiết kế dashboard", "desc": "Làm wireframe, thử với người dùng thật 2 vòng, tối ưu để trả lời đúng 5 câu hỏi quản lý hay hỏi nhất." },
+        { "title": "Vận hành & đào tạo", "desc": "Đặt lịch làm mới dữ liệu tự động, viết tài liệu từ điển chỉ số, đào tạo người dùng." }
+      ],
+      "flow": {
+        "before": ["Xuất file từ POS", "Gom thủ công vào Excel", "Đối chiếu & sửa lỗi", "Làm báo cáo PPT", "Gửi email"],
+        "after": ["Dữ liệu tự động đổ về", "Dashboard làm mới mỗi giờ", "Quản lý xem & lọc trực tiếp"]
+      },
+      "metrics": [
+        { "label": "Thời gian lập báo cáo tuần", "before": 16, "after": 0.25, "unit": "giờ", "better": "lower" },
+        { "label": "Độ trễ số liệu", "before": 7, "after": 0.04, "unit": "ngày", "better": "lower" }
+      ],
+      "results": [
+        "Báo cáo tuần từ 2 ngày công xuống còn dưới 15 phút kiểm tra, ban giám đốc có số liệu mỗi sáng.",
+        "Một định nghĩa chỉ số duy nhất được cả công ty sử dụng.",
+        "Phát hiện nhóm hàng tồn lâu chiếm khoảng 12% giá trị kho, được đưa vào kế hoạch xả hàng."
+      ],
+      "learnings": [
+        "Chốt định nghĩa chỉ số với các bên liên quan quan trọng hơn bất kỳ thiết kế biểu đồ nào.",
+        "Dashboard tốt trả lời câu hỏi cụ thể — bắt đầu từ câu hỏi, không bắt đầu từ biểu đồ."
+      ]
+    },
+    {
+      "slug": "tu-dong-hoa-doi-soat-hoa-don",
+      "title": "Tự động hóa đối soát hóa đơn – công nợ",
+      "category": "work",
+      "year": "2025",
+      "role": "Business Analyst & người xây dựng giải pháp",
+      "duration": "6 tuần",
+      "team": "1 BA, 2 kế toán, 1 IT",
+      "summary": "Tự động đọc hóa đơn, đối soát với đơn hàng và gửi cảnh báo chênh lệch, giảm mạnh thời gian và lỗi nhập liệu của đội kế toán.",
+      "tags": ["Power Automate", "Python", "RPA"],
+      "tools": ["Power Automate", "Python (pandas)", "Excel", "SharePoint"],
+      "context": "Đội kế toán công nợ xử lý hàng trăm hóa đơn nhà cung cấp mỗi ngày gửi qua email, phải nhập tay và đối chiếu với đơn mua hàng.",
+      "problem": "Mỗi ngày mất khoảng 3 giờ cho việc nhập và đối soát, tỷ lệ sai sót khoảng 6% dẫn đến thanh toán chậm và phải xử lý lại.",
+      "approach": [
+        { "title": "Khảo sát và đo thời gian", "desc": "Quan sát công việc thực tế, bấm giờ từng bước, xác định các bước có quy tắc rõ ràng phù hợp để tự động hóa." },
+        { "title": "Thiết kế quy tắc đối soát", "desc": "Cùng kế toán chốt các quy tắc khớp (số PO, số tiền, dung sai) và danh sách ngoại lệ cần người duyệt." },
+        { "title": "Xây dựng luồng tự động", "desc": "Power Automate nhận email, Python đối soát, kết quả ghi lên SharePoint và gửi thông báo các hóa đơn chênh lệch." },
+        { "title": "Chạy song song & nghiệm thu", "desc": "Chạy song song với quy trình cũ 2 tuần để so sánh trước khi chuyển hẳn." }
+      ],
+      "flow": {
+        "before": ["Nhận email hóa đơn", "Nhập tay vào Excel", "Tra đơn mua hàng", "So sánh từng dòng", "Báo chênh lệch"],
+        "after": ["Bot nhận & đọc hóa đơn", "Tự động đối soát với PO", "Chỉ ngoại lệ chuyển cho kế toán"]
+      },
+      "metrics": [
+        { "label": "Thời gian xử lý mỗi ngày", "before": 180, "after": 20, "unit": "phút", "better": "lower" },
+        { "label": "Tỷ lệ sai sót", "before": 6, "after": 0.5, "unit": "%", "better": "lower" }
+      ],
+      "results": [
+        "Tiết kiệm khoảng 55 giờ công mỗi tháng cho đội kế toán.",
+        "Hơn 90% hóa đơn được khớp tự động, chỉ ngoại lệ cần xử lý tay.",
+        "Có nhật ký kiểm toán đầy đủ cho từng hóa đơn."
+      ],
+      "learnings": [
+        "Tối ưu quy trình trước rồi mới tự động hóa — tự động hóa một quy trình tệ chỉ làm lỗi nhanh hơn.",
+        "Luôn thiết kế đường xử lý ngoại lệ cho con người."
+      ]
+    },
+    {
+      "slug": "toi-uu-quy-trinh-phe-duyet-mua-hang",
+      "title": "Tái thiết kế quy trình phê duyệt mua hàng",
+      "category": "work",
+      "year": "2024",
+      "role": "Business Analyst",
+      "duration": "10 tuần",
+      "team": "1 BA, 5 trưởng phòng ban, bộ phận mua hàng",
+      "summary": "Vẽ lại quy trình AS-IS, loại bỏ các bước thừa và chuẩn hóa quyền phê duyệt, rút ngắn chu kỳ từ yêu cầu đến đặt hàng.",
+      "tags": ["BPMN", "AS-IS / TO-BE", "Process mining"],
+      "tools": ["Bizagi / draw.io (BPMN)", "Excel", "SQL", "Confluence"],
+      "context": "Quy trình mua hàng nội bộ phải qua nhiều cấp phê duyệt qua email, không có chuẩn thống nhất về ngưỡng giá trị.",
+      "problem": "Thời gian trung bình từ yêu cầu đến đặt hàng là 9 ngày; nhiều yêu cầu bị kẹt tại một người duyệt mà không ai theo dõi được.",
+      "approach": [
+        { "title": "Vẽ quy trình AS-IS", "desc": "Phỏng vấn 14 người, vẽ sơ đồ BPMN và đối chiếu với dữ liệu thời gian thật từ email/hệ thống." },
+        { "title": "Phân tích điểm nghẽn", "desc": "Tính thời gian chờ ở từng bước; phát hiện 60% thời gian là chờ duyệt ở 2 bước." },
+        { "title": "Đề xuất TO-BE", "desc": "Phân cấp phê duyệt theo ngưỡng giá trị, duyệt song song, tự động nhắc quá hạn." },
+        { "title": "Quản lý thay đổi", "desc": "Soạn tài liệu BRD, user story, hướng dẫn và thí điểm tại 1 phòng ban trước khi mở rộng." }
+      ],
+      "flow": {
+        "before": ["Gửi yêu cầu qua email", "Trưởng phòng duyệt", "Tài chính duyệt", "Giám đốc duyệt", "Mua hàng đặt đơn"],
+        "after": ["Biểu mẫu chuẩn", "Duyệt theo ngưỡng giá trị", "Duyệt song song + nhắc tự động", "Đặt đơn"]
+      },
+      "metrics": [
+        { "label": "Chu kỳ từ yêu cầu đến đặt hàng", "before": 9, "after": 3.5, "unit": "ngày", "better": "lower" },
+        { "label": "Số bước phê duyệt trung bình", "before": 5, "after": 2.5, "unit": "bước", "better": "lower" }
+      ],
+      "results": [
+        "Chu kỳ giảm hơn 60%, yêu cầu giá trị thấp được duyệt trong ngày.",
+        "Quyền phê duyệt rõ ràng, minh bạch, có thể theo dõi trạng thái.",
+        "Bộ tài liệu quy trình được dùng làm mẫu cho 2 quy trình khác."
+      ],
+      "learnings": [
+        "Sơ đồ quy trình chỉ đáng giá khi đi kèm số liệu thời gian thật.",
+        "Người dùng chấp nhận thay đổi khi thấy rõ lợi ích cho chính họ."
+      ]
+    },
+    {
+      "slug": "phan-khuc-khach-hang-rfm",
+      "title": "Phân khúc khách hàng RFM cho cửa hàng thương mại điện tử",
+      "category": "freelance",
+      "year": "2024",
+      "role": "Freelance Data Analyst",
+      "duration": "4 tuần",
+      "team": "1 analyst, chủ cửa hàng",
+      "summary": "Phân khúc khách hàng theo hành vi mua và đề xuất chiến dịch email theo từng nhóm, tăng tỷ lệ chuyển đổi.",
+      "tags": ["Python", "RFM", "Looker Studio"],
+      "tools": ["Python (pandas, scikit-learn)", "SQL", "Looker Studio"],
+      "context": "Một cửa hàng online với khoảng 20.000 khách hàng gửi cùng một nội dung email cho tất cả mọi người.",
+      "problem": "Tỷ lệ mở và chuyển đổi email thấp, không biết nhóm khách nào đem lại doanh thu nhiều nhất.",
+      "approach": [
+        { "title": "Làm sạch dữ liệu đơn hàng", "desc": "Gộp khách trùng, loại đơn hủy/hoàn, chuẩn hóa thời gian." },
+        { "title": "Tính RFM & phân cụm", "desc": "Tính Recency, Frequency, Monetary, kết hợp K-means để xác định 5 nhóm khách." },
+        { "title": "Đề xuất chiến dịch", "desc": "Thiết kế thông điệp riêng cho từng nhóm: VIP, trung thành, có nguy cơ rời bỏ, mới, ngủ đông." },
+        { "title": "Đo lường", "desc": "Chạy thử nghiệm A/B và theo dõi trên dashboard Looker Studio." }
+      ],
+      "flow": null,
+      "metrics": [
+        { "label": "Tỷ lệ chuyển đổi từ email", "before": 1.8, "after": 2.5, "unit": "%", "better": "higher" },
+        { "label": "Doanh thu từ nhóm có nguy cơ rời bỏ (kích hoạt lại)", "before": 100, "after": 118, "unit": "chỉ số (cơ sở = 100)", "better": "higher" }
+      ],
+      "results": [
+        "Chỉ 18% khách hàng đem lại khoảng 60% doanh thu — được tập trung chăm sóc.",
+        "Tỷ lệ chuyển đổi email tăng khoảng 39% so với gửi đồng loạt.",
+        "Bàn giao notebook và dashboard để chủ cửa hàng tự cập nhật hằng tháng."
+      ],
+      "learnings": [
+        "Mô hình đơn giản, dễ giải thích thường thắng mô hình phức tạp khi làm việc với doanh nghiệp nhỏ.",
+        "Phải gắn kết quả phân tích với hành động cụ thể mà khách có thể làm ngay."
+      ]
+    },
+    {
+      "slug": "du-bao-nhu-cau-ban-le",
+      "title": "Dự báo nhu cầu bán lẻ theo chuỗi thời gian",
+      "category": "school",
+      "year": "2022",
+      "role": "Trưởng nhóm đồ án (nhóm 4 người)",
+      "duration": "1 học kỳ",
+      "team": "Nhóm 4 sinh viên",
+      "summary": "So sánh các mô hình dự báo doanh số theo tuần cho một chuỗi bán lẻ để hỗ trợ kế hoạch nhập hàng.",
+      "tags": ["Python", "Time series", "Prophet"],
+      "tools": ["Python", "statsmodels", "Prophet", "Matplotlib"],
+      "context": "Đồ án môn Dự báo trong kinh doanh, sử dụng bộ dữ liệu bán lẻ công khai.",
+      "problem": "Cần dự báo doanh số 8 tuần tới cho từng nhóm sản phẩm để giảm thiếu hụt và tồn kho dư.",
+      "approach": [
+        { "title": "Khám phá dữ liệu", "desc": "Phân rã xu hướng, mùa vụ, ảnh hưởng ngày lễ và khuyến mãi." },
+        { "title": "Xây dựng mô hình", "desc": "So sánh Naive, ARIMA/SARIMA, Prophet." },
+        { "title": "Đánh giá", "desc": "Kiểm định theo cửa sổ trượt, so sánh bằng MAPE và RMSE." }
+      ],
+      "flow": null,
+      "metrics": [
+        { "label": "Sai số dự báo (MAPE)", "before": 22, "after": 11, "unit": "%", "better": "lower" }
+      ],
+      "results": [
+        "Mô hình tốt nhất giảm sai số khoảng một nửa so với phương pháp naive.",
+        "Đạt điểm cao nhất lớp và được giảng viên chọn làm bài mẫu."
+      ],
+      "learnings": [
+        "Đánh giá bằng cửa sổ trượt phản ánh thực tế tốt hơn chia train/test một lần.",
+        "Biến ngoại sinh như khuyến mãi cải thiện dự báo đáng kể."
+      ]
+    },
+    {
+      "slug": "phan-tich-churn-vien-thong",
+      "title": "Phân tích và dự đoán khách hàng rời bỏ dịch vụ",
+      "category": "school",
+      "year": "2021",
+      "role": "Thành viên nhóm (phụ trách phân tích và trực quan hóa)",
+      "duration": "8 tuần",
+      "team": "Nhóm 3 sinh viên",
+      "summary": "Tìm các yếu tố dẫn đến việc khách hàng bỏ dịch vụ và xây dựng mô hình dự đoán để ưu tiên chăm sóc.",
+      "tags": ["Python", "Logistic Regression", "Tableau"],
+      "tools": ["Python (scikit-learn)", "Tableau", "SQL"],
+      "context": "Đồ án môn Khai phá dữ liệu trên bộ dữ liệu khách hàng viễn thông.",
+      "problem": "Xác định nhóm khách có nguy cơ rời bỏ cao và nguyên nhân chính để doanh nghiệp có hành động giữ chân.",
+      "approach": [
+        { "title": "Phân tích khám phá", "desc": "Phân tích theo loại hợp đồng, thời gian sử dụng, phương thức thanh toán." },
+        { "title": "Mô hình hóa", "desc": "Logistic Regression và Random Forest, xử lý mất cân bằng lớp." },
+        { "title": "Trình bày insight", "desc": "Dashboard Tableau và khuyến nghị hành động cho từng nhóm." }
+      ],
+      "flow": null,
+      "metrics": [
+        { "label": "AUC của mô hình", "before": 0.5, "after": 0.84, "unit": "", "better": "higher" }
+      ],
+      "results": [
+        "Khách hợp đồng theo tháng và dùng ít dịch vụ đi kèm có tỷ lệ rời bỏ cao hơn nhiều lần.",
+        "Đề xuất chương trình ưu đãi gia hạn nhắm đúng nhóm nguy cơ cao."
+      ],
+      "learnings": [
+        "Mô hình tốt chưa đủ — cần diễn giải được vì sao để người làm kinh doanh tin và dùng.",
+        "Chọn thước đo phù hợp (recall, AUC) khi dữ liệu mất cân bằng."
+      ]
+    }
+  ],
+  "contact": {
+    "email": "danhndm379@gmail.com",
+    "github": "https://github.com/su-learnnplay",
+    "linkedin": "",
+    "location": "Việt Nam"
+  }
+}

@@ -1,0 +1,105 @@
+<%- include('partials/head', { title: pr.title + ' — ' + p.name, desc: pr.summary }) %>
+
+  <main>
+    <section class="hero hero-sm">
+      <div class="container">
+        <a class="back" href="/#projects">← Tất cả dự án</a>
+        <p class="badge"><%= (p.categories.find(c => c.id === pr.category) || {}).label %> · <%= pr.year %></p>
+        <h1><%= pr.title %></h1>
+        <p class="lead"><%= pr.summary %></p>
+        <dl class="facts">
+          <div><dt>Vai trò</dt><dd><%= pr.role %></dd></div>
+          <div><dt>Thời gian</dt><dd><%= pr.duration %></dd></div>
+          <div><dt>Nhóm</dt><dd><%= pr.team %></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="block">
+          <h2 class="h2">Bối cảnh</h2>
+          <p class="muted"><%= pr.context %></p>
+        </div>
+        <div class="block">
+          <h2 class="h2">Vấn đề</h2>
+          <p class="muted"><%= pr.problem %></p>
+        </div>
+
+        <div class="block">
+          <h2 class="h2">Cách tiếp cận</h2>
+          <ol class="approach">
+            <% pr.approach.forEach((a, i) => { %>
+              <li><b><%= i + 1 %></b><div><h3><%= a.title %></h3><p class="muted"><%= a.desc %></p></div></li>
+            <% }) %>
+          </ol>
+        </div>
+
+        <% if (pr.flow) { %>
+        <div class="block">
+          <h2 class="h2">Quy trình trước và sau</h2>
+          <div class="flow">
+            <% [['before', 'Trước (AS-IS)'], ['after', 'Sau (TO-BE)']].forEach(([k, label]) => { %>
+              <div class="flow-row flow-<%= k %>">
+                <span class="flow-label"><%= label %></span>
+                <ol><% pr.flow[k].forEach(s => { %><li><%= s %></li><% }) %></ol>
+              </div>
+            <% }) %>
+          </div>
+        </div>
+        <% } %>
+
+        <div class="block">
+          <h2 class="h2">Kết quả đo được</h2>
+          <% pr.metrics.forEach(m => {
+               const max = Math.max(m.before, m.after);
+               const pct = Math.round(Math.abs(m.after - m.before) / m.before * 100);
+               const good = (m.better === 'lower') === (m.after < m.before);
+               const fmt = (v) => String(v).replace('.', ','); %>
+            <div class="metric">
+              <div class="metric-head">
+                <span><%= m.label %></span>
+                <strong class="<%= good ? 'good' : '' %>"><%= m.after < m.before ? '−' : '+' %><%= pct %>%</strong>
+              </div>
+              <div class="bar"><i class="bar-before" style="width:<%= Math.max(2, m.before / max * 100) %>%"></i><em>Trước: <%= fmt(m.before) %> <%= m.unit %></em></div>
+              <div class="bar"><i class="bar-after" style="width:<%= Math.max(2, m.after / max * 100) %>%"></i><em>Sau: <%= fmt(m.after) %> <%= m.unit %></em></div>
+            </div>
+          <% }) %>
+          <ul class="ticks">
+            <% pr.results.forEach(r => { %><li><%= r %></li><% }) %>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2 class="h2">Công cụ sử dụng</h2>
+          <div class="chips"><% pr.tools.forEach(t => { %><span><%= t %></span><% }) %></div>
+        </div>
+
+        <div class="block">
+          <h2 class="h2">Bài học rút ra</h2>
+          <ul class="ticks"><% pr.learnings.forEach(l => { %><li><%= l %></li><% }) %></ul>
+        </div>
+
+        <% if (pr.link || pr.repo) { %>
+          <div class="links"><% if (pr.link) { %><a class="btn btn-sm" href="<%= pr.link %>" target="_blank" rel="noopener">Xem demo ↗</a><% } %>
+          <% if (pr.repo) { %><a class="btn btn-sm" href="<%= pr.repo %>" target="_blank" rel="noopener">Mã nguồn ↗</a><% } %></div>
+        <% } %>
+      </div>
+    </section>
+
+    <section class="section alt pager">
+      <div class="container pager-inner">
+        <a href="/projects/<%= prev.slug %>"><small>← Dự án trước</small><span><%= prev.title %></span></a>
+        <a href="/projects/<%= next.slug %>" class="right"><small>Dự án sau →</small><span><%= next.title %></span></a>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container" style="text-align:center">
+        <h2 class="title" style="color:#fff">Bạn có bài toán tương tự?</h2>
+        <a class="btn btn-light" href="/#contact">Liên hệ với mình</a>
+      </div>
+    </section>
+  </main>
+
+<%- include('partials/foot') %>

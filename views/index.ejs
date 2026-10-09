@@ -1,0 +1,127 @@
+<%- include('partials/head', { title: p.name + ' — ' + p.title + ' | ' + p.subtitle, desc: p.tagline }) %>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="badge"><i></i><%= p.availability %></p>
+        <h1>Xin chào, mình là <em><%= p.name %></em><br><%= p.title %></h1>
+        <p class="sub"><%= p.subtitle %></p>
+        <p class="lead"><%= p.tagline %></p>
+        <div class="cta">
+          <a href="#projects" class="btn">Xem dự án</a>
+          <a href="#contact" class="btn btn-ghost">Thuê mình</a>
+        </div>
+        <ul class="stats">
+          <% p.stats.forEach(s => { %>
+            <li><strong><%= s.value %></strong><span><%= s.label %></span></li>
+          <% }) %>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2 class="title">Về mình</h2>
+          <% p.about.forEach(t => { %><p class="muted"><%= t %></p><% }) %>
+        </div>
+        <div class="skills">
+          <% p.skills.forEach(g => { %>
+            <div class="skill-group">
+              <h3><%= g.group %></h3>
+              <div class="chips"><% g.items.forEach(i => { %><span><%= i %></span><% }) %></div>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2 class="title">Mình có thể giúp gì cho bạn</h2>
+        <div class="grid-3">
+          <% p.services.forEach((s, i) => { %>
+            <article class="card">
+              <div class="num">0<%= i + 1 %></div>
+              <h3><%= s.title %></h3>
+              <p class="muted"><%= s.desc %></p>
+            </article>
+          <% }) %>
+        </div>
+        <h3 class="subtitle">Quy trình làm việc</h3>
+        <ol class="steps">
+          <% p.process.forEach((s, i) => { %>
+            <li><b><%= i + 1 %></b><h4><%= s.step %></h4><p class="muted"><%= s.desc %></p></li>
+          <% }) %>
+        </ol>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="title">Dự án nổi bật</h2>
+        <div class="filters" role="tablist">
+          <% p.categories.forEach((c, i) => { %>
+            <button class="filter<%= i === 0 ? ' active' : '' %>" data-filter="<%= c.id %>"><%= c.label %></button>
+          <% }) %>
+        </div>
+        <div class="grid-3" id="project-grid">
+          <% p.projects.forEach(pr => {
+               const m = pr.metrics[0];
+               const pct = Math.round(Math.abs(m.after - m.before) / m.before * 100); %>
+            <article class="card project" data-cat="<%= pr.category %>">
+              <div class="meta">
+                <span class="cat cat-<%= pr.category %>"><%= (p.categories.find(c => c.id === pr.category) || {}).label %></span>
+                <span><%= pr.year %></span>
+              </div>
+              <h3><a class="stretch" href="/projects/<%= pr.slug %>"><%= pr.title %></a></h3>
+              <p class="muted"><%= pr.summary %></p>
+              <p class="kpi"><strong><%= m.better === 'lower' ? '−' : '+' %><%= pct %>%</strong> <%= m.label.toLowerCase() %></p>
+              <div class="chips"><% pr.tags.forEach(t => { %><span><%= t %></span><% }) %></div>
+              <span class="more">Xem chi tiết →</span>
+            </article>
+          <% }) %>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container narrow">
+        <h2 class="title">Kinh nghiệm & học vấn</h2>
+        <ol class="timeline">
+          <% p.experience.forEach(e => { %>
+            <li>
+              <span class="period"><%= e.period %></span>
+              <h3><%= e.role %></h3>
+              <p class="company"><%= e.company %></p>
+              <ul><% e.points.forEach(pt => { %><li><%= pt %></li><% }) %></ul>
+            </li>
+          <% }) %>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container two-col">
+        <div>
+          <h2 class="title">Cùng làm việc nhé</h2>
+          <p class="muted">Bạn có quy trình cần tối ưu, dữ liệu cần khai thác hoặc vị trí đang tuyển? Hãy để lại lời nhắn, mình sẽ phản hồi sớm nhất có thể.</p>
+          <ul class="contact-list">
+            <li>✉ <a href="mailto:<%= p.contact.email %>"><%= p.contact.email %></a></li>
+            <% if (p.contact.github) { %><li>⌘ <a href="<%= p.contact.github %>" target="_blank" rel="noopener">GitHub</a></li><% } %>
+            <% if (p.contact.linkedin) { %><li>in <a href="<%= p.contact.linkedin %>" target="_blank" rel="noopener">LinkedIn</a></li><% } %>
+            <li>⌂ <%= p.contact.location %></li>
+          </ul>
+        </div>
+        <form id="contact-form" class="form" novalidate>
+          <label>Họ tên<input name="name" required maxlength="100"></label>
+          <label>Email<input name="email" type="email" required maxlength="150"></label>
+          <label>Nội dung<textarea name="message" rows="5" required maxlength="3000"></textarea></label>
+          <button class="btn" type="submit">Gửi tin nhắn</button>
+          <p class="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<%- include('partials/foot') %>
